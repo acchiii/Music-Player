@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "dork.music.player"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    lintOptions {
+        disable "InvalidPackage"
+        disable "MissingTranslation"
+   }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	api 'com.android.support:viewpager:+'
+	implementation 'com.github.lepouletsuisse:youtubedl-java:1.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+}

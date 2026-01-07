@@ -1,0 +1,18 @@
+# view AndroidManifest.xml #generated:57
+-keep class android.support.v4.content.FileProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class dork.music.player.App { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class dork.music.player.common.crash.CrashHandler$CrashActiviy { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class dork.music.player.ui.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class dork.music.player.ui.activity.Themes { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class dork.music.player.ui.activity.music { <init>(...); }
+
